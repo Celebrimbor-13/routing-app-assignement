@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "username": "Omi",
+      "firstName": "Omister",
+      "lastName": "Onions",
+      "aboutMe": "I am originally from Cheshire in the UK, and started my teaching career there before moving to Hong Kong in 2007."
+    },
+    {
+      "id": 2,
+      "username": "Lesta",
+      "firstName": "Lestanber",
+      "lastName": "Nutter",
+      "aboutMe": "Originally from the United States, I have been living and working in Hong Kong since January 2003."
+    },
+    {
+      "id": 3,
+      "username": "Kon",
+      "firstName": "Konveir",
+      "lastName": "Gotobed",
+      "aboutMe": "I am from Germany and moved with my family to Hong Kong several years ago.When I am not working I enjoy spending time with my family and our friends."
+    }
+  ]

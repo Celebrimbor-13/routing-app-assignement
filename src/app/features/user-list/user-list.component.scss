@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  ul {
+    display: flex;
+    width: 20rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    li {
+      background-color: silver;
+      width: 5rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.4rem;
+    }
+  }
+}
