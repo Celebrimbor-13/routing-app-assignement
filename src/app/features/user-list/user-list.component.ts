@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UsersService } from 'src/app/core/services/users.service';
+import { UsersService } from 'src/app/services/users.service';
 import { User } from 'src/app/models/interfaces/user.model';
 
 @Component({
@@ -19,10 +19,6 @@ export class UserListComponent implements OnInit {
       this.users = value;
       this.loading = false;
     });
-  }
-
-  getDetails(id: number) {
-    this.router.navigate(['user-details', id]);
   }
 
   ngOnInit(): void {}

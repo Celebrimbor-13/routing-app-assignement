@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DetailsService } from 'src/app/core/services/details.service';
+import { DetailsService } from 'src/app/services/details.service';
 import { Details } from 'src/app/models/interfaces/user.model';
 
 @Component({
@@ -16,7 +16,9 @@ export class UserDetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.paramMap.get('id');
-    this.user = this.detailsService.getDetailsById(Number(id));
+    this.activatedRoute.paramMap.subscribe((params) => {
+      const id = params.get('id');
+      this.user = this.detailsService.getDetailsById(Number(id));
+    });
   }
 }
